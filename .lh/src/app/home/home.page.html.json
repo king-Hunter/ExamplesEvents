@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/app/home/home.page.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1649177704902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649177710044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,6 +12,10 @@\n       <ion-title size=\"large\">Blank</ion-title>\n     </ion-toolbar>\n   </ion-header>\n \n-  ilist\n+  <ion-list>\n+    <ion-item>\n+      <ion-label>Awesome Label</ion-label>\n+    </ion-item>\n+  </ion-list>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649177715314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n   </ion-header>\n \n   <ion-list>\n     <ion-item>\n-      <ion-label>Awesome Label</ion-label>\n+      <ion-button (click)=\"onClick()\" expand=\"block\" fill=\"clear\" shape=\"round\">\n+        Click me\n+      </ion-button>\n     </ion-item>\n   </ion-list>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649177723322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   </ion-header>\n \n   <ion-list>\n     <ion-item>\n-      <ion-button (click)=\"onClick()\" expand=\"block\" fill=\"clear\" shape=\"round\">\n+      <ion-button input-events (click)=\"onClick()\" expand=\"block\" fill=\"clear\" shape=\"round\">\n         Click me\n       </ion-button>\n     </ion-item>\n   </ion-list>\n"
+                },
+                {
+                    "date": 1649177730999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n   </ion-header>\n \n   <ion-list>\n     <ion-item>\n-      <ion-button input-events (click)=\"onClick()\" expand=\"block\" fill=\"clear\" shape=\"round\">\n-        Click me\n+      <ion-button (click)=\"onClick()\" expand=\"block\" fill=\"clear\" shape=\"round\">\n+        nput-events\n       </ion-button>\n     </ion-item>\n   </ion-list>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649177748957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n   <ion-list>\n     <ion-item>\n       <ion-button (click)=\"onClick()\" expand=\"block\" fill=\"clear\" shape=\"round\">\n-        nput-events\n+        Input Events\n       </ion-button>\n     </ion-item>\n   </ion-list>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649177765031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   </ion-header>\n \n   <ion-list>\n     <ion-item>\n-      <ion-button (click)=\"onClick()\" expand=\"block\" fill=\"clear\" shape=\"round\">\n+      <ion-button (click)=\"inputEvent()\" expand=\"block\" fill=\"clear\" shape=\"round\">\n         Input Events\n       </ion-button>\n     </ion-item>\n   </ion-list>\n"
+                }
+            ],
+            "date": 1649177704902,
+            "name": "Commit-0",
+            "content": "<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Blank\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Blank</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  ilist\n</ion-content>\n"
+        }
+    ]
+}

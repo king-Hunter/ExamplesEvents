@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>InputEvents</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-label position="floating">Prevent key space</ion-label>
+      <ion-input type="text" id="prevent_key_code" onkeypress="return event.charCode != 32" ></ion-input>
+    </ion-item>
+</ion-content>

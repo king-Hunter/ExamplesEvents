@@ -1,0 +1,114 @@
+{
+    "sourceFile": "src/app/pages/input-events/input-events.page.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1649177879839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649177885034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n \n   constructor() { }\n \n   ngOnInit() {\n-    \n+    document.\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649177890636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n \n   constructor() { }\n \n   ngOnInit() {\n-    document.\n+    document.getElementById('input-event').addEventListener('keyup', (event) => {\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649177897256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,9 @@\n   constructor() { }\n \n   ngOnInit() {\n     document.getElementById('input-event').addEventListener('keyup', (event) => {\n+      console.log(event.target.value);\n+    })\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649177908586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   constructor() { }\n \n   ngOnInit() {\n     document.getElementById('input-event').addEventListener('keyup', (event) => {\n-      console.log(event.target.value);\n+      console.log(event);\n     })\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649177917665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n \n   constructor() { }\n \n   ngOnInit() {\n-    document.getElementById('input-event').addEventListener('keyup', (event) => {\n+    document.getElementById('input-event').addEventListener('keyup', (event => {\n       console.log(event);\n-    })\n+    });\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649177926552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n \n   constructor() { }\n \n   ngOnInit() {\n-    document.getElementById('input-event').addEventListener('keyup', (event => {\n+    document.getElementById('input-event').addEventListener('keyup', event => {\n       console.log(event);\n-    });\n+    }, );\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649177934464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,11 @@\n   styleUrls: ['./input-events.page.scss'],\n })\n export class InputEventsPage implements OnInit {\n \n-  constructor() { }\n-\n   ngOnInit() {\n     document.getElementById('input-event').addEventListener('keyup', event => {\n       console.log(event);\n-    }, );\n+    }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178397386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n })\n export class InputEventsPage implements OnInit {\n \n   ngOnInit() {\n-    document.getElementById('input-event').addEventListener('keyup', event => {\n+    document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event);\n     }, false);\n   }\n \n"
+                },
+                {
+                    "date": 1649178457825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n export class InputEventsPage implements OnInit {\n \n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n-      console.log(event);\n+      console.log(event.);\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178465962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n export class InputEventsPage implements OnInit {\n \n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n-      console.log(event.);\n+      console.log(event.key);\n+      console.log()\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178484133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n-      console.log()\n+      console.log(event.ke);\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178490041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n \n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n-      console.log(event.ke);\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178504677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n \n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n+      console.log()\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178528227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n-      console.log()\n+      console.log(event);\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178581392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n-      console.log(event);\n+      console.log(event.);\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178591072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n \n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n-      console.log(event.);\n+      if (event.key === 'Enter') {\n+      event.preventDefault()\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178597458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,11 @@\n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n       if (event.key === 'Enter') {\n-      event.preventDefault()\n+        event.preventDefault()\n+      }\n+\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178604441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,11 @@\n \n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n-      if (event.key === 'Enter') {\n-        event.preventDefault()\n+      if (event.key === ' ') {\n+        event.preventDefault();\n       }\n-\n     }, false);\n   }\n \n }\n"
+                },
+                {
+                    "date": 1649178616966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n       if (event.key === ' ') {\n+        console.log\n         event.preventDefault();\n       }\n     }, false);\n   }\n"
+                },
+                {
+                    "date": 1649178777676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,9 @@\n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n       if (event.key === ' ') {\n-        console.log\n-        event.preventDefault();\n+        \n       }\n     }, false);\n   }\n \n"
+                },
+                {
+                    "date": 1649178785132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n       if (event.key === ' ') {\n-        \n+        event.key \n       }\n     }, false);\n   }\n \n"
+                },
+                {
+                    "date": 1649178794764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,13 @@\n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n       if (event.key === ' ') {\n-        event.key \n+        event.\n+        public set value(v : string) {\n+          this. = v;\n+        }\n+        \n       }\n     }, false);\n   }\n \n"
+                },
+                {
+                    "date": 1649178800696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,9 @@\n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n       if (event.key === ' ') {\n-        event.\n-        public set value(v : string) {\n-          this. = v;\n-        }\n-        \n+        event\n       }\n     }, false);\n   }\n \n"
+                },
+                {
+                    "date": 1649178805804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   ngOnInit() {\n     document.getElementById('prevent_key_code').addEventListener('keyup', event => {\n       console.log(event.key);\n       if (event.key === ' ') {\n-        event\n+        event.stopPropagation()\n       }\n     }, false);\n   }\n \n"
+                }
+            ],
+            "date": 1649177879839,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-input-events',\n  templateUrl: './input-events.page.html',\n  styleUrls: ['./input-events.page.scss'],\n})\nexport class InputEventsPage implements OnInit {\n\n  constructor() { }\n\n  ngOnInit() {\n    \n  }\n\n}\n"
+        }
+    ]
+}

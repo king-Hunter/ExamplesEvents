@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'input-events',
+    loadChildren: () => import('./pages/input-events/input-events.module').then( m => m.InputEventsPageModule)
+  },
 ];
 
 @NgModule({

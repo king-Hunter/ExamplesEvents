@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/app/home/home.page.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1649177774746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649177787064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,10 @@\n   styleUrls: ['home.page.scss'],\n })\n export class HomePage {\n \n-  constructor() {}\n+  constructor(private router) {}\n \n-  inputEvent()\n+  inputEvent(){\n+\n+  }\n }\n"
+                },
+                {
+                    "date": 1649177794931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   styleUrls: ['home.page.scss'],\n })\n export class HomePage {\n \n-  constructor(private router) {}\n+  constructor(private Router) {}\n \n   inputEvent(){\n \n   }\n"
+                },
+                {
+                    "date": 1649177812890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n import { Component } from '@angular/core';\n+import { Routes } from '@angular/router';\n \n @Component({\n   selector: 'app-home',\n   templateUrl: 'home.page.html',\n   styleUrls: ['home.page.scss'],\n })\n export class HomePage {\n \n-  constructor(private Router) {}\n+  constructor(private Routes) {}\n \n   inputEvent(){\n \n   }\n"
+                },
+                {
+                    "date": 1649177819907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Component } from '@angular/core';\n-import { Routes } from '@angular/router';\n+import { Route } from '@angular/router';\n \n @Component({\n   selector: 'app-home',\n   templateUrl: 'home.page.html',\n"
+                },
+                {
+                    "date": 1649177827554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import { Component } from '@angular/core';\n-import { Route } from '@angular/router';\n+import { Router } from '@angular/router';\n \n @Component({\n   selector: 'app-home',\n   templateUrl: 'home.page.html',\n   styleUrls: ['home.page.scss'],\n })\n export class HomePage {\n \n-  constructor(private Routes) {}\n+  constructor(private Router) {}\n \n   inputEvent(){\n \n   }\n"
+                },
+                {
+                    "date": 1649177835216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   styleUrls: ['home.page.scss'],\n })\n export class HomePage {\n \n-  constructor(private Router) {}\n+  constructor(private route: Router) {}\n \n   inputEvent(){\n \n   }\n"
+                },
+                {
+                    "date": 1649177842094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n \n   constructor(private route: Router) {}\n \n   inputEvent(){\n-\n+    this.route.navigate(['/input']);\n   }\n }\n"
+                },
+                {
+                    "date": 1649177856715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n \n   constructor(private route: Router) {}\n \n   inputEvent(){\n-    this.route.navigate(['/input']);\n+    this.route.navigate(['/input-events']);\n   }\n }\n"
+                }
+            ],
+            "date": 1649177774746,
+            "name": "Commit-0",
+            "content": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-home',\n  templateUrl: 'home.page.html',\n  styleUrls: ['home.page.scss'],\n})\nexport class HomePage {\n\n  constructor() {}\n\n  inputEvent()\n}\n"
+        }
+    ]
+}

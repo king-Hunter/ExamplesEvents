@@ -1,0 +1,86 @@
+{
+    "sourceFile": "src/app/pages/input-events/input-events.page.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1649176830324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649176836947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,17 @@\n   </ion-toolbar>\n </ion-header>\n \n <ion-content>\n-  iform\n+    <ion-item>\n+      <ion-label position=\"floating\">E-Mail <ion-text color=\"danger\">*</ion-text></ion-label>\n+      <ion-input required formControlName=\"email\" type=\"text\"></ion-input>\n+    </ion-item>\n+    <ion-item>\n+      <ion-label position=\"floating\">Password <ion-text color=\"danger\">*</ion-text></ion-label>\n+      <ion-input required formControlName=\"password\" type=\"text\"></ion-input>\n+    </ion-item>\n+    <ion-button block color=\"primary\" type=\"submit\" [disabled]=\"loginForm.invalid\">\n+      Login\n+    </ion-button>\n+  </form>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649176843919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,6 @@\n     <ion-item>\n       <ion-label position=\"floating\">Password <ion-text color=\"danger\">*</ion-text></ion-label>\n       <ion-input required formControlName=\"password\" type=\"text\"></ion-input>\n     </ion-item>\n-    <ion-button block color=\"primary\" type=\"submit\" [disabled]=\"loginForm.invalid\">\n-      Login\n-    </ion-button>\n-  </form>\n+    \n </ion-content>\n"
+                },
+                {
+                    "date": 1649176859538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,7 @@\n       <ion-input required formControlName=\"email\" type=\"text\"></ion-input>\n     </ion-item>\n     <ion-item>\n       <ion-label position=\"floating\">Password <ion-text color=\"danger\">*</ion-text></ion-label>\n-      <ion-input required formControlName=\"password\" type=\"text\"></ion-input>\n+      <ion-input type=\"text\"></ion-input>\n     </ion-item>\n-    \n </ion-content>\n"
+                },
+                {
+                    "date": 1649176870125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n       <ion-input required formControlName=\"email\" type=\"text\"></ion-input>\n     </ion-item>\n     <ion-item>\n       <ion-label position=\"floating\">Password <ion-text color=\"danger\">*</ion-text></ion-label>\n-      <ion-input type=\"text\"></ion-input>\n+      <ion-input type=\"text\" () ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649176875192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n       <ion-input required formControlName=\"email\" type=\"text\"></ion-input>\n     </ion-item>\n     <ion-item>\n       <ion-label position=\"floating\">Password <ion-text color=\"danger\">*</ion-text></ion-label>\n-      <ion-input type=\"text\" () ></ion-input>\n+      <ion-input type=\"text\" (ngModel) ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649176886909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,8 @@\n </ion-header>\n \n <ion-content>\n     <ion-item>\n-      <ion-label position=\"floating\">E-Mail <ion-text color=\"danger\">*</ion-text></ion-label>\n-      <ion-input required formControlName=\"email\" type=\"text\"></ion-input>\n-    </ion-item>\n-    <ion-item>\n       <ion-label position=\"floating\">Password <ion-text color=\"danger\">*</ion-text></ion-label>\n-      <ion-input type=\"text\" (ngModel) ></ion-input>\n+      <ion-input type=\"text\" (ngModelChange)=\"\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649176896519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n </ion-header>\n \n <ion-content>\n     <ion-item>\n-      <ion-label position=\"floating\">Password <ion-text color=\"danger\">*</ion-text></ion-label>\n+      <ion-label position=\"floating\">Event </ion-label>\n       <ion-input type=\"text\" (ngModelChange)=\"\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649176925131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n </ion-header>\n \n <ion-content>\n     <ion-item>\n-      <ion-label position=\"floating\">Event </ion-label>\n+      <ion-label position=\"floating\">Prevent </ion-label>\n       <ion-input type=\"text\" (ngModelChange)=\"\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649176945020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n </ion-header>\n \n <ion-content>\n     <ion-item>\n-      <ion-label position=\"floating\">Prevent </ion-label>\n+      <ion-label position=\"floating\">Prevent k</ion-label>\n       <ion-input type=\"text\" (ngModelChange)=\"\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649176952471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n </ion-header>\n \n <ion-content>\n     <ion-item>\n-      <ion-label position=\"floating\">Prevent k</ion-label>\n+      <ion-label position=\"floating\">Prevent space </ion-label>\n       <ion-input type=\"text\" (ngModelChange)=\"\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649176958525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n </ion-header>\n \n <ion-content>\n     <ion-item>\n-      <ion-label position=\"floating\">Prevent space </ion-label>\n+      <ion-label position=\"floating\">Prevent key space</ion-label>\n       <ion-input type=\"text\" (ngModelChange)=\"\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649177617648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n \n <ion-content>\n     <ion-item>\n       <ion-label position=\"floating\">Prevent key space</ion-label>\n-      <ion-input type=\"text\" (ngModelChange)=\"\" ></ion-input>\n+      <ion-input type=\"text\" id=\"\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649177623560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n \n <ion-content>\n     <ion-item>\n       <ion-label position=\"floating\">Prevent key space</ion-label>\n-      <ion-input type=\"text\" id=\"\" ></ion-input>\n+      <ion-input type=\"text\" id=\"event_\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649177639125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n \n <ion-content>\n     <ion-item>\n       <ion-label position=\"floating\">Prevent key space</ion-label>\n-      <ion-input type=\"text\" id=\"event_\" ></ion-input>\n+      <ion-input type=\"text\" id=\"prevent_\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649177660015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n \n <ion-content>\n     <ion-item>\n       <ion-label position=\"floating\">Prevent key space</ion-label>\n-      <ion-input type=\"text\" id=\"prevent_\" ></ion-input>\n+      <ion-input type=\"text\" id=\"prevent_key_\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649177666809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n \n <ion-content>\n     <ion-item>\n       <ion-label position=\"floating\">Prevent key space</ion-label>\n-      <ion-input type=\"text\" id=\"prevent_key_\" ></ion-input>\n+      <ion-input type=\"text\" id=\"prevent_key_code\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                },
+                {
+                    "date": 1649178713778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n \n <ion-content>\n     <ion-item>\n       <ion-label position=\"floating\">Prevent key space</ion-label>\n-      <ion-input type=\"text\" id=\"prevent_key_code\" ></ion-input>\n+      <ion-input type=\"text\" id=\"prevent_key_code\" onkeypress=\"return event.charCode != 32\" ></ion-input>\n     </ion-item>\n </ion-content>\n"
+                }
+            ],
+            "date": 1649176830324,
+            "name": "Commit-0",
+            "content": "<ion-header>\n  <ion-toolbar>\n    <ion-title>InputEvents</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  iform\n</ion-content>\n"
+        }
+    ]
+}
