@@ -1,0 +1,7 @@
+{
+  "name": "ExamplesEvents",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
